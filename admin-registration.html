@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Registration</title>
+</head>
+
+<body>
+
+    <h1 align="center">Event Management System</h1>
+    <h2 align="center">Admin Registration Form</h2>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Admin Information</legend>
+
+            <table cellpadding="5">
+
+                <tr>
+                    <td>
+                        <label for="adminName">Admin Full Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="adminName"
+                               name="adminName" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="adminId">Admin ID:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="adminId"
+                               name="adminId" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="employeeId">Employee ID:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="employeeId"
+                               name="employeeId" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="adminEmail">Official Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="adminEmail"
+                               name="adminEmail" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="adminPhone">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="adminPhone"
+                               name="adminPhone" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="department">Department:</label>
+                    </td>
+                    <td>
+                        <select id="department" name="department" required>
+                            <option value="">-- Select Department --</option>
+                            <option value="IT">IT Department</option>
+                            <option value="HR">Human Resources</option>
+                            <option value="Operations">Operations</option>
+                            <option value="Management">Management</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <table cellpadding="5">
+
+                <tr>
+                    <td>
+                        <label for="adminPassword">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="adminPassword"
+                               name="adminPassword" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="confirmAdminPassword">
+                            Confirm Password:
+                        </label>
+                    </td>
+                    <td>
+                        <input type="password" id="confirmAdminPassword"
+                               name="confirmAdminPassword" required>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="adminTerms"
+               name="adminTerms" required>
+
+        <label for="adminTerms">
+            I confirm that the information is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Register as Admin">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <br>
+
+    <p>
+        <a href="../commonui/index.html">Back to Home</a> |
+        <a href="../commonui/login.html">Login Here</a>
+    </p>
+
+</body>
+
+</html>
+
+
+
+
+

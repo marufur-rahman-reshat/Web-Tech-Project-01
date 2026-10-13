@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Event Management System</title>
+</head>
+<body>
+
+    <h1 align="center">Event Management System</h1>
+    <h2 align="center">Login to Your Account</h2>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <table align="center" cellpadding="8">
+
+            <tr>
+                <td valign="top">
+                    <label>User Category:</label>
+                </td>
+
+                <td>
+                    <table cellpadding="4">
+
+                        <tr>
+                            <td>
+                                <input type="radio" id="admin"
+                                       name="userType" value="admin" required>
+                                <label for="admin">Admin</label>
+                            </td>
+
+                            <td>
+                                <input type="radio" id="customer"
+                                       name="userType" value="customer">
+                                <label for="customer">Customer</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" id="organizer"
+                                       name="userType" value="organizer">
+                                <label for="organizer">Organizer</label>
+                            </td>
+
+                            <td>
+                                <input type="radio" id="manager"
+                                       name="userType" value="manager">
+                                <label for="manager">Manager</label>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Email Address:</label>
+                </td>
+
+                <td>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Password:</label>
+                </td>
+
+                <td>
+                    <input type="password" id="password" name="password"
+                           placeholder="Enter your password" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+
+                <td align="center">
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <p align="center">
+        Don't have an account?
+        <a href="../customer/customer-registration.html">Register Here</a>
+    </p>
+
+    <p align="center">
+        <a href="index.html">Back to Home</a>
+    </p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
