@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manager Registration Form</title>
+</head>
+<body>
+
+<h1>Manager Registration Form</h1>
+<p>Register as a manager of the Event Management System.</p>
+
+<form>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label>Gender:</label><br>
+
+        <input type="checkbox" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="checkbox" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="checkbox" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="30"></textarea><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Account Information</legend>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="password" id="confirm" name="confirm" required><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Professional Information</legend>
+
+        <label for="qualification">Educational Qualification:</label><br>
+
+        <select id="qualification" name="qualification">
+            <option value="">Select Qualification</option>
+            <option value="HSC">HSC</option>
+            <option value="Bachelor">Bachelor's Degree</option>
+            <option value="Masters">Master's Degree</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="experience">Work Experience:</label><br>
+
+        <select id="experience" name="experience">
+            <option value="">Select Experience</option>
+            <option value="Fresher">No Experience</option>
+            <option value="1-2 years">1-2 Years</option>
+            <option value="3-5 years">3-5 Years</option>
+            <option value="5+ years">More than 5 Years</option>
+        </select><br><br>
+
+        <label>Management Skills:</label><br>
+
+        <input type="checkbox" id="planning" name="skills" value="Event Planning">
+        <label for="planning">Event Planning</label><br>
+
+        <input type="checkbox" id="communication" name="skills" value="Communication">
+        <label for="communication">Communication</label><br>
+
+        <input type="checkbox" id="teamwork" name="skills" value="Teamwork">
+        <label for="teamwork">Teamwork</label><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions.</label><br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
+
+</form>
+
+</body>
+</html>
