@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Organizer Registration Form</title>
+</head>
+<body>
+ 
+<h1>Organizer Registration Form</h1>
+<p>Register as an organizer of the Event Management System.</p>
+ 
+<form>
+ 
+    <fieldset>
+        <legend>Personal Information</legend>
+ 
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name"><br><br>
+ 
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com"><br><br>
+ 
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX"><br><br>
+ 
+        <label>Gender:</label><br>
+ 
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+ 
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+ 
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+ 
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address"></textarea><br><br>
+ 
+    </fieldset>
+ 
+    <br>
+ 
+    <fieldset>
+        <legend>Account Information</legend>
+ 
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Choose a username"><br><br>
+ 
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+ 
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="password" id="confirm" name="confirm" placeholder="Re-enter your password"><br><br>
+ 
+    </fieldset>
+  
+    <br>
+ 
+    <fieldset>
+        <legend>Organization Information</legend>
+ 
+        <label for="orgname">Organization Name:</label><br>
+        <input type="text" id="orgname" name="orgname" placeholder="Enter your organization name"><br><br>
+ 
+        <label>Event Type:</label><br>
+ 
+        <input type="radio" id="wedding" name="eventtype" value="Wedding">
+        <label for="wedding">Wedding</label><br>
+ 
+        <input type="radio" id="concert" name="eventtype" value="Concert">
+        <label for="concert">Concert</label><br>
+ 
+        <input type="radio" id="conference" name="eventtype" value="Conference">
+        <label for="conference">Conference</label><br>
+ 
+        <input type="radio" id="birthday" name="eventtype" value="Birthday">
+        <label for="birthday">Birthday Party</label><br>
+ 
+        <input type="radio" id="otherevent" name="eventtype" value="Other">
+        <label for="otherevent">Other</label><br><br>
+ 
+        <label for="experience">Event Organizing Experience:</label><br>
+ 
+        <select id="experience" name="experience">
+            <option value="">Select Experience</option>
+            <option value="Fresher">No Experience</option>
+            <option value="1-2 years">1-2 Years</option>
+            <option value="3-5 years">3-5 Years</option>
+            <option value="5+ years">More than 5 Years</option>
+        </select><br><br>
+ 
+        <label>Organizing Skills:</label><br>
+ 
+        <input type="checkbox" id="planning" name="skills" value="Event Planning">
+        <label for="planning">Event Planning</label><br>
+ 
+        <input type="checkbox" id="budget" name="skills" value="Budget Management">
+        <label for="budget">Budget Management</label><br>
+ 
+        <input type="checkbox" id="teamwork" name="skills" value="Teamwork">
+        <label for="teamwork">Teamwork</label><br><br>
+ 
+    </fieldset>
+ 
+    <br>
+ 
+    <input type="checkbox" id="terms" name="terms">
+    <label for="terms">I agree to the terms and conditions.</label><br><br>
+ 
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
+ 
+</form>
+ 
+</body>
+</html>
