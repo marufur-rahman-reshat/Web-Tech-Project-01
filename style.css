@@ -1,0 +1,249 @@
+/* General Page Design */
+* {
+    box-sizing: border-box;
+}
+ 
+html {
+    scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4fb;
+    color: #222222;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+ 
+/* Header Design */
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px #999999;
+}
+ 
+#page-title {
+    font-size: 28px;
+    margin: 0;
+}
+ 
+header p {
+    margin-bottom: 0;
+}
+ 
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #172554;
+    padding: 12px;
+}
+ 
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+ 
+/* Hover Effect */
+nav a:hover {
+    background-color: orange;
+    color: black;
+}
+ 
+/* Active Page */
+nav a.active {
+    background-color: white;
+    color: navy;
+}
+ 
+/* Main Section */
+main {
+    padding: 20px;
+}
+ 
+.form-heading {
+    text-align: center;
+    color: navy;
+    margin-bottom: 5px;
+}
+ 
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+/* Form Container */
+.form-container {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #cccccc;
+    position: relative;
+    overflow: hidden;
+}
+ 
+/* Absolute Position */
+.form-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    color: black;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+ 
+/* Class Selector */
+.form-section {
+    background-color: #f8fafc;
+    border: 1px solid #b8c5d6;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+ 
+/* Legend */
+legend {
+    color: navy;
+    font-weight: bold;
+    padding: 0 5px;
+}
+ 
+/* Element Selector */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+ 
+/* Text Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+ 
+/* Focus Effect */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: navy;
+}
+ 
+/* Terms and Conditions */
+.terms {
+    margin: 15px 0;
+}
+ 
+.terms label {
+    font-weight: normal;
+}
+ 
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+ 
+input[type="submit"],
+input[type="reset"] {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+/* Button Hover */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: orange;
+    color: black;
+}
+ 
+/* Fixed Position */
+.top-link {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 20;
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px #999999;
+}
+ 
+.top-link:hover {
+    background-color: orange;
+    color: black;
+}
+ 
+/* Footer */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+ 
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+ 
+    .form-container {
+        width: 100%;
+        padding: 15px;
+    }
+ 
+    #page-title {
+        font-size: 23px;
+    }
+ 
+    nav {
+        gap: 5px;
+    }
+ 
+    nav a {
+        padding: 7px;
+    }
+}
+ 
