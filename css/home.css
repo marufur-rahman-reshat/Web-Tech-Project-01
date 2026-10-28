@@ -1,0 +1,188 @@
+/* General Page Style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    color: #173b67;
+    text-align: center;
+    font-size: 32px;
+}
+
+h2, h3 {
+    color: #245b91;
+}
+
+/* Class and ID Selectors */
+.page-title {
+    color: #173b67;
+    text-align: center;
+}
+
+#main-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: #173b67;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 10px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: white;
+    padding: 15px 10px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #dddddd;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    display: inline-block;
+    color: #173b67;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin: 3px 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #173b67;
+    color: white;
+}
+
+/* Active Page Link */
+nav a.active {
+    background-color: #173b67;
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+}
+
+main > h2,
+main > p {
+    text-align: center;
+}
+
+main > p {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+/* Service Cards */
+main table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+main table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+main fieldset {
+    height: 100%;
+    background-color: white;
+    border: 1px solid #dce3ed;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+main fieldset:hover {
+    border-color: #245b91;
+    box-shadow: 0 5px 15px #dddddd;
+}
+
+main fieldset h2 {
+    color: #173b67;
+    font-size: 28px;
+}
+
+/* General Links */
+a {
+    transition: 0.3s;
+}
+
+/* Footer */
+footer {
+    background-color: #173b67;
+    color: white;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 7px 9px;
+    }
+
+    main table,
+    main table tbody,
+    main table tr,
+    main table td {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        margin: 2px;
+        padding: 7px;
+    }
+
+    main fieldset {
+        padding: 12px;
+    }
+}
